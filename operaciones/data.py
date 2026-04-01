@@ -10,12 +10,16 @@ def project_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
+def operaciones_data_dir() -> Path:
+    return project_root() / "data" / "operaciones"
+
+
 def metrics_path() -> Path:
-    return project_root() / "docs" / "RAW_INPUT_METRICS.csv"
+    return operaciones_data_dir() / "RAW_INPUT_METRICS.csv"
 
 
 def orders_path() -> Path:
-    return project_root() / "docs" / "RAW_ORDERS.csv"
+    return operaciones_data_dir() / "RAW_ORDERS.csv"
 
 
 def load_metrics() -> pd.DataFrame:

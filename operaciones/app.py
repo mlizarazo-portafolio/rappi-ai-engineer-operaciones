@@ -56,7 +56,7 @@ def _system_prompt_full() -> str:
 def main() -> None:
     st.title("Rappi — bot de operaciones")
     st.caption(
-        "Datos: `docs/RAW_INPUT_METRICS.csv`, `docs/RAW_ORDERS.csv` y diccionario `docs/RAW_SUMMARY.csv`. "
+        "Datos: `data/operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`. "
         "Requiere `OPENAI_API_KEY`."
     )
 

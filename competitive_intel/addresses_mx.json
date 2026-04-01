@@ -1,0 +1,27 @@
+{
+  "country_code": "MX",
+  "currency": "MXN",
+  "justification": "20 puntos en ciudades principales: núcleos urbanos, periferia y ciudades medianas para variar competitividad. Coordenadas aproximadas para apps de delivery.",
+  "addresses": [
+    {"id": "MX_CDMX_01", "city": "Ciudad de México", "neighborhood": "Roma Norte", "zone_type": "urban_core", "lat": 19.4194, "lon": -99.1556},
+    {"id": "MX_CDMX_02", "city": "Ciudad de México", "neighborhood": "Polanco", "zone_type": "urban_core", "lat": 19.433, "lon": -99.195},
+    {"id": "MX_CDMX_03", "city": "Ciudad de México", "neighborhood": "Coyoacán Centro", "zone_type": "urban_core", "lat": 19.35, "lon": -99.162},
+    {"id": "MX_CDMX_04", "city": "Ciudad de México", "neighborhood": "Iztapalapa Sur", "zone_type": "periphery", "lat": 19.32, "lon": -99.05},
+    {"id": "MX_GDL_01", "city": "Guadalajara", "neighborhood": "Zapopan Centro", "zone_type": "urban_core", "lat": 20.676, "lon": -103.348},
+    {"id": "MX_GDL_02", "city": "Guadalajara", "neighborhood": "Tlaquepaque Centro", "zone_type": "urban_secondary", "lat": 20.64, "lon": -103.31},
+    {"id": "MX_MTY_01", "city": "Monterrey", "neighborhood": "San Pedro", "zone_type": "urban_core", "lat": 25.657, "lon": -100.402},
+    {"id": "MX_MTY_02", "city": "Monterrey", "neighborhood": "García", "zone_type": "periphery", "lat": 25.78, "lon": -100.59},
+    {"id": "MX_PUE_01", "city": "Puebla", "neighborhood": "Angelópolis", "zone_type": "urban_secondary", "lat": 19.0, "lon": -98.25},
+    {"id": "MX_QRO_01", "city": "Querétaro", "neighborhood": "Centro Histórico", "zone_type": "urban_secondary", "lat": 20.588, "lon": -100.388},
+    {"id": "MX_MID_01", "city": "Mérida", "neighborhood": "Paseo Montejo", "zone_type": "urban_secondary", "lat": 20.967, "lon": -89.623},
+    {"id": "MX_CUN_01", "city": "Cancún", "neighborhood": "Zona Hotelera", "zone_type": "tourism", "lat": 21.133, "lon": -86.746},
+    {"id": "MX_TIJ_01", "city": "Tijuana", "neighborhood": "Zona Río", "zone_type": "border_urban", "lat": 32.53, "lon": -117.02},
+    {"id": "MX_LEO_01", "city": "León", "neighborhood": "Centro", "zone_type": "urban_secondary", "lat": 21.125, "lon": -101.686},
+    {"id": "MX_AGS_01", "city": "Aguascalientes", "neighborhood": "Centro", "zone_type": "urban_secondary", "lat": 21.885, "lon": -102.291},
+    {"id": "MX_VER_01", "city": "Veracruz", "neighborhood": "Centro", "zone_type": "coastal", "lat": 19.173, "lon": -96.134},
+    {"id": "MX_HMO_01", "city": "Hermosillo", "neighborhood": "Centro", "zone_type": "urban_secondary", "lat": 29.089, "lon": -110.961},
+    {"id": "MX_CUL_01", "city": "Culiacán", "neighborhood": "Centro", "zone_type": "urban_secondary", "lat": 24.806, "lon": -107.394},
+    {"id": "MX_CHH_01", "city": "Chihuahua", "neighborhood": "Centro", "zone_type": "urban_secondary", "lat": 28.632, "lon": -106.069},
+    {"id": "MX_MXL_01", "city": "Mexicali", "neighborhood": "Centro", "zone_type": "border_urban", "lat": 32.624, "lon": -115.454}
+  ]
+}

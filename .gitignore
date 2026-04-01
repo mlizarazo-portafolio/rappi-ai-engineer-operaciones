@@ -15,6 +15,10 @@ __pycache__/
 reports/*
 !reports/.gitkeep
 
+# Scrapes competitivos (CSV/JSON generados; no commitear corridas reales)
+data/competitive_intelligence/output/*
+!data/competitive_intelligence/output/.gitkeep
+
 # IDE / OS
 .idea/
 .vscode/

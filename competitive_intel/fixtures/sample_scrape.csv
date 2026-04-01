@@ -1,0 +1,181 @@
+data_source,platform,address_id,city,neighborhood,zone_type,lat,lon,product_name,item_price_mxn,delivery_fee_mxn,service_fee_mxn,total_checkout_mxn,eta_minutes,promotions_visible,store_available,scraped_at
+synthetic_demo,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Combo Big Mac,175.84,28.17,16.16,220.17,40,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Coca-Cola 600ml,174.54,38.58,6.67,207.79,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,McNuggets 10 piezas,162.57,39.68,10.76,213.01,27,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Combo Big Mac,177.76,31.23,13.67,217.66,33,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Coca-Cola 600ml,172.84,19.17,10.18,202.19,24,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,McNuggets 10 piezas,169.48,40.5,8.5,206.48,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Combo Big Mac,104.75,25.76,7.0,132.51,43,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Coca-Cola 600ml,160.08,21.45,13.92,195.45,47,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,McNuggets 10 piezas,158.35,16.89,6.69,169.93,24,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Combo Big Mac,168.83,38.42,10.97,213.22,36,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Coca-Cola 600ml,165.08,29.13,12.35,206.56,41,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,McNuggets 10 piezas,153.94,24.12,5.4,183.46,33,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Combo Big Mac,180.34,20.26,5.3,193.9,31,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Coca-Cola 600ml,150.7,35.44,12.55,198.69,34,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,McNuggets 10 piezas,97.27,16.29,13.24,121.8,36,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Combo Big Mac,106.92,31.58,9.5,148.0,34,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Coca-Cola 600ml,127.25,15.51,5.75,148.51,52,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,McNuggets 10 piezas,117.94,38.79,13.31,170.04,44,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Combo Big Mac,106.73,42.08,10.93,154.74,27,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Coca-Cola 600ml,114.93,40.7,14.86,170.49,40,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,McNuggets 10 piezas,156.48,34.5,6.1,185.08,32,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Combo Big Mac,127.99,17.79,5.84,151.62,39,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Coca-Cola 600ml,153.11,23.37,11.67,188.15,23,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,McNuggets 10 piezas,173.27,16.08,10.42,194.77,36,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Combo Big Mac,138.08,20.25,8.19,161.52,39,Envío gratis pedido mínimo,False,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Coca-Cola 600ml,172.3,36.86,6.0,215.16,40,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,McNuggets 10 piezas,119.43,30.61,12.72,150.76,45,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Combo Big Mac,120.38,16.12,12.21,143.71,31,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Coca-Cola 600ml,129.25,43.59,8.78,176.62,35,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,McNuggets 10 piezas,113.69,16.35,10.66,128.7,47,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Combo Big Mac,184.08,38.46,10.81,233.35,32,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Coca-Cola 600ml,132.37,16.41,13.53,162.31,30,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,McNuggets 10 piezas,107.28,36.74,6.43,145.45,28,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Combo Big Mac,111.2,21.39,13.29,145.88,52,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Coca-Cola 600ml,93.5,19.26,5.91,118.67,43,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,McNuggets 10 piezas,159.49,28.54,6.69,182.72,47,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Combo Big Mac,110.27,18.71,17.06,146.04,32,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Coca-Cola 600ml,164.51,43.67,8.72,204.9,46,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,McNuggets 10 piezas,161.57,18.18,6.82,181.57,32,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Combo Big Mac,188.3,36.0,10.19,229.49,45,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Coca-Cola 600ml,177.94,35.79,7.38,221.11,37,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,McNuggets 10 piezas,155.31,25.19,9.08,177.58,35,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Combo Big Mac,136.18,19.74,7.11,151.03,45,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Coca-Cola 600ml,98.61,28.89,6.07,133.57,48,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,McNuggets 10 piezas,181.48,17.57,7.66,201.71,28,Ninguna visible,False,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Combo Big Mac,102.55,20.24,5.69,128.48,37,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Coca-Cola 600ml,129.34,30.14,16.38,163.86,44,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,McNuggets 10 piezas,121.05,22.48,12.43,143.96,32,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Combo Big Mac,147.38,16.61,14.57,178.56,24,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Coca-Cola 600ml,179.36,38.71,16.32,234.39,45,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,McNuggets 10 piezas,172.9,17.51,11.01,201.42,37,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Combo Big Mac,129.5,30.08,7.45,167.03,28,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Coca-Cola 600ml,114.71,22.9,8.59,141.2,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,McNuggets 10 piezas,120.95,38.25,14.88,162.08,38,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Combo Big Mac,183.45,34.58,15.46,228.49,35,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Coca-Cola 600ml,171.86,21.07,14.03,201.96,44,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,McNuggets 10 piezas,106.6,36.77,6.1,144.47,46,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Combo Big Mac,175.09,30.19,13.96,207.24,45,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Coca-Cola 600ml,154.01,16.42,11.97,182.4,28,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,McNuggets 10 piezas,141.6,28.22,13.74,171.56,45,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Combo Big Mac,182.48,16.36,5.74,199.58,26,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Coca-Cola 600ml,167.26,30.92,8.22,201.4,50,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,McNuggets 10 piezas,127.48,21.5,6.2,143.18,28,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Combo Big Mac,136.0,36.89,12.19,173.08,46,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Coca-Cola 600ml,135.29,44.6,14.33,182.22,46,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,McNuggets 10 piezas,161.88,18.66,12.65,193.19,39,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Combo Big Mac,177.54,21.95,10.08,209.57,35,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Coca-Cola 600ml,173.13,16.85,16.52,206.5,47,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,McNuggets 10 piezas,105.64,41.38,12.56,159.58,41,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Combo Big Mac,94.96,19.56,6.04,108.56,47,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Coca-Cola 600ml,155.81,14.15,4.46,174.42,25,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,McNuggets 10 piezas,115.29,35.62,5.05,150.96,47,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Combo Big Mac,168.11,40.14,5.52,213.77,27,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Coca-Cola 600ml,172.91,33.9,16.06,222.87,26,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,McNuggets 10 piezas,124.52,36.3,17.74,173.56,37,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Combo Big Mac,99.24,38.2,13.09,150.53,28,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Coca-Cola 600ml,193.0,26.46,13.98,233.44,41,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,McNuggets 10 piezas,189.6,22.12,11.51,218.23,43,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Combo Big Mac,106.55,26.62,9.02,130.19,38,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Coca-Cola 600ml,119.12,21.24,9.3,137.66,41,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,McNuggets 10 piezas,131.8,18.95,11.13,156.88,33,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Combo Big Mac,145.26,21.77,12.44,179.47,36,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Coca-Cola 600ml,163.45,24.49,15.24,203.18,36,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,McNuggets 10 piezas,133.69,30.38,14.58,173.65,45,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Combo Big Mac,147.03,35.88,8.36,186.27,46,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Coca-Cola 600ml,102.21,37.04,5.26,144.51,31,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,McNuggets 10 piezas,126.39,34.3,4.78,165.47,46,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Combo Big Mac,107.05,29.06,5.77,136.88,34,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Coca-Cola 600ml,167.04,21.41,12.27,200.72,44,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,McNuggets 10 piezas,93.19,18.72,10.41,122.32,29,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Combo Big Mac,197.79,31.68,15.91,233.38,47,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Coca-Cola 600ml,136.94,17.4,14.82,169.16,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,McNuggets 10 piezas,115.35,42.21,5.58,158.14,28,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Combo Big Mac,153.64,27.41,5.61,186.66,30,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Coca-Cola 600ml,159.91,32.3,13.72,200.93,24,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,McNuggets 10 piezas,128.85,37.11,10.37,171.33,44,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Combo Big Mac,180.38,28.7,14.13,223.21,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Coca-Cola 600ml,102.33,23.72,14.89,135.94,42,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,McNuggets 10 piezas,110.74,13.86,15.01,134.61,36,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Combo Big Mac,97.65,23.34,14.14,130.13,38,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Coca-Cola 600ml,145.61,37.84,16.74,195.19,40,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,McNuggets 10 piezas,185.31,18.42,14.52,206.25,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Combo Big Mac,191.98,40.97,8.05,229.0,44,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Coca-Cola 600ml,107.39,14.93,13.9,124.22,36,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,McNuggets 10 piezas,192.79,25.16,14.09,227.04,25,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Combo Big Mac,181.85,34.92,4.82,221.59,34,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Coca-Cola 600ml,157.65,32.03,13.25,202.93,49,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,McNuggets 10 piezas,96.9,19.39,11.51,127.8,49,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Combo Big Mac,165.98,15.89,10.22,187.09,45,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Coca-Cola 600ml,183.88,25.44,16.09,213.41,29,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,McNuggets 10 piezas,124.93,41.6,7.44,168.97,24,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Combo Big Mac,175.74,41.37,8.14,213.25,34,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Coca-Cola 600ml,194.76,33.14,11.72,239.62,34,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,McNuggets 10 piezas,108.44,23.88,5.4,137.72,29,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Combo Big Mac,153.7,22.26,9.21,173.17,51,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Coca-Cola 600ml,119.75,36.88,7.09,158.72,33,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,McNuggets 10 piezas,164.15,28.8,11.88,204.83,32,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Combo Big Mac,112.76,41.23,8.68,162.67,36,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Coca-Cola 600ml,141.62,29.29,17.93,183.84,39,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,McNuggets 10 piezas,177.23,20.56,12.31,210.1,24,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Combo Big Mac,146.27,25.75,5.03,165.05,49,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Coca-Cola 600ml,119.61,15.61,10.04,145.26,37,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,McNuggets 10 piezas,106.16,24.41,5.32,123.89,43,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Combo Big Mac,130.38,24.2,4.42,159.0,26,Descuento primera orden,False,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Coca-Cola 600ml,141.44,26.12,8.21,175.77,36,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,McNuggets 10 piezas,117.4,21.71,7.17,134.28,38,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Combo Big Mac,130.64,42.91,5.63,179.18,33,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Coca-Cola 600ml,101.73,19.15,16.94,137.82,22,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,McNuggets 10 piezas,108.18,33.6,8.14,149.92,36,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Combo Big Mac,95.47,37.35,12.0,144.82,28,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Coca-Cola 600ml,120.43,39.16,10.04,157.63,39,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,McNuggets 10 piezas,176.32,22.59,14.16,213.07,39,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Combo Big Mac,122.96,15.26,4.74,137.96,34,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Coca-Cola 600ml,162.49,31.89,12.85,195.23,33,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,McNuggets 10 piezas,104.37,16.99,12.33,133.69,29,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Combo Big Mac,97.31,15.5,17.91,125.72,37,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Coca-Cola 600ml,186.7,31.09,13.08,230.87,29,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,McNuggets 10 piezas,126.97,34.91,15.87,177.75,22,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Combo Big Mac,182.39,20.8,11.9,215.09,38,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Coca-Cola 600ml,167.58,29.45,13.67,205.7,50,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,McNuggets 10 piezas,96.25,35.77,10.82,142.84,34,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Combo Big Mac,130.47,31.22,6.11,167.8,52,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Coca-Cola 600ml,175.47,37.29,6.83,219.59,38,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,McNuggets 10 piezas,128.92,26.85,12.89,163.66,45,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Combo Big Mac,107.57,42.12,16.25,153.94,42,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Coca-Cola 600ml,172.75,15.69,17.73,194.17,31,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,McNuggets 10 piezas,137.15,24.57,12.91,169.63,37,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Combo Big Mac,188.54,26.71,6.95,222.2,33,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Coca-Cola 600ml,111.29,32.69,8.66,152.64,49,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,McNuggets 10 piezas,170.35,38.12,7.93,216.4,29,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Combo Big Mac,137.59,20.05,4.92,162.56,38,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Coca-Cola 600ml,140.21,16.12,7.29,163.62,32,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,McNuggets 10 piezas,179.61,39.19,15.64,234.44,51,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Combo Big Mac,127.96,31.59,6.26,153.81,43,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Coca-Cola 600ml,113.76,22.6,7.08,143.44,44,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,McNuggets 10 piezas,127.1,26.14,10.26,163.5,41,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Combo Big Mac,189.15,17.13,15.32,216.6,25,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Coca-Cola 600ml,112.95,25.21,9.98,148.14,30,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,McNuggets 10 piezas,182.46,23.17,10.95,211.58,30,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Combo Big Mac,183.33,36.64,13.29,233.26,39,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Coca-Cola 600ml,144.2,24.67,5.91,174.78,28,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,McNuggets 10 piezas,184.61,17.52,10.74,200.87,30,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Combo Big Mac,109.03,42.51,9.18,148.72,37,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Coca-Cola 600ml,151.15,20.62,17.85,189.62,43,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,McNuggets 10 piezas,112.49,42.62,9.44,159.55,23,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Combo Big Mac,157.27,34.52,14.09,193.88,29,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Coca-Cola 600ml,158.9,13.86,16.48,189.24,31,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,McNuggets 10 piezas,107.9,18.0,12.16,138.06,34,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Combo Big Mac,162.59,25.37,11.95,194.91,41,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Coca-Cola 600ml,125.39,17.88,12.16,143.43,48,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,McNuggets 10 piezas,178.72,32.99,15.75,227.46,39,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Combo Big Mac,193.55,25.99,14.6,234.14,32,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Coca-Cola 600ml,148.81,42.21,10.45,201.47,38,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,McNuggets 10 piezas,141.79,18.77,6.19,166.75,39,2x1 en bebidas,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Combo Big Mac,96.98,22.81,6.97,126.76,45,Descuento primera orden,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Coca-Cola 600ml,161.78,17.37,7.89,175.04,27,Ninguna visible,True,2026-04-01T01:51:10Z
+synthetic_demo,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,McNuggets 10 piezas,186.03,19.39,11.08,211.5,43,Cupón zona,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Combo Big Mac,116.9,29.71,8.07,149.68,52,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Coca-Cola 600ml,94.4,23.76,14.41,120.57,41,Envío gratis pedido mínimo,True,2026-04-01T01:51:10Z
+synthetic_demo,didi_food,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,McNuggets 10 piezas,174.99,21.71,10.63,202.33,38,2x1 en bebidas,True,2026-04-01T01:51:10Z
