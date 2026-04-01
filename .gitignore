@@ -1,0 +1,23 @@
+# Entorno y secretos
+.venv/
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Artefactos regenerables (ver README: python -m operaciones.generate_report)
+reports/*
+!reports/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
