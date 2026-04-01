@@ -15,7 +15,7 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Competitive Intelligence — México (Rappi / Uber Eats / DiDi Food)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    d = sub.add_parser("demo", help="Genera CSV sintético reproducible en data/competitive_intelligence/output/")
+    d = sub.add_parser("demo", help="Genera CSV sintético en data/caso_2_competitive_intelligence/output/")
     d.add_argument("-o", "--output", type=Path, default=None, help="Ruta CSV (default: scrape_latest.csv)")
 
     r = sub.add_parser("report", help="Construye informe Markdown + figuras desde el CSV")

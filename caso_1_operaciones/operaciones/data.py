@@ -7,11 +7,12 @@ WEEK_COLS_ORDERS = [f"L{i}W" for i in range(8, -1, -1)]
 
 
 def project_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    """Raíz del monorepo (donde están `data/`, `reports/`, `.env`)."""
+    return Path(__file__).resolve().parents[2]
 
 
 def operaciones_data_dir() -> Path:
-    return project_root() / "data" / "operaciones"
+    return project_root() / "data" / "caso_1_operaciones"
 
 
 def metrics_path() -> Path:

@@ -1,5 +1,5 @@
 """
-Carga `data/operaciones/RAW_SUMMARY.csv` (diccionario de columnas del caso).
+Carga `data/caso_1_operaciones/RAW_SUMMARY.csv` (diccionario de columnas del caso).
 Requisito del enunciado: usar los tres archivos compartidos.
 """
 
@@ -13,7 +13,7 @@ from operaciones.data import project_root
 
 
 def summary_path() -> Path:
-    return project_root() / "data" / "operaciones" / "RAW_SUMMARY.csv"
+    return project_root() / "data" / "caso_1_operaciones" / "RAW_SUMMARY.csv"
 
 
 def load_data_dictionary_for_prompt(max_chars: int = 4000) -> str:

@@ -11,13 +11,13 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# Artefactos regenerables (ver README: python -m operaciones.generate_report)
+# Artefactos regenerables (ver README del caso 1)
 reports/*
 !reports/.gitkeep
 
 # Scrapes competitivos (CSV/JSON generados; no commitear corridas reales)
-data/competitive_intelligence/output/*
-!data/competitive_intelligence/output/.gitkeep
+data/caso_2_competitive_intelligence/output/*
+!data/caso_2_competitive_intelligence/output/.gitkeep
 
 # IDE / OS
 .idea/

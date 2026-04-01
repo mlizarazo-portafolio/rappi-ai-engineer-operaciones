@@ -6,7 +6,8 @@ from pathlib import Path
 
 
 def project_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    """Raíz del monorepo (`data/`, `reports/`, etc.)."""
+    return Path(__file__).resolve().parents[2]
 
 
 def package_dir() -> Path:
@@ -14,7 +15,7 @@ def package_dir() -> Path:
 
 
 def output_dir() -> Path:
-    p = project_root() / "data" / "competitive_intelligence" / "output"
+    p = project_root() / "data" / "caso_2_competitive_intelligence" / "output"
     p.mkdir(parents=True, exist_ok=True)
     return p
 

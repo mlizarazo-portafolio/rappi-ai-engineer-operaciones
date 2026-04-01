@@ -1,7 +1,7 @@
 """
 Genera informe de insights (Markdown + HTML) en `reports/`.
 
-Uso (desde la raíz del repo):
+Uso (desde la carpeta `caso_1_operaciones/`):
   python -m operaciones.generate_report
 """
 
@@ -11,16 +11,17 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-_ROOT = Path(__file__).resolve().parents[1]
-if str(_ROOT) not in sys.path:
-    sys.path.insert(0, str(_ROOT))
+_PKG_PARENT = Path(__file__).resolve().parents[1]
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_PKG_PARENT) not in sys.path:
+    sys.path.insert(0, str(_PKG_PARENT))
 
 from operaciones.insights_engine import run_all
 from operaciones.report_markdown import build_markdown_report, markdown_to_report_html
 
 
 def main() -> None:
-    out_dir = _ROOT / "reports"
+    out_dir = _REPO_ROOT / "reports"
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     md_path = out_dir / f"insights_executive_{stamp}.md"

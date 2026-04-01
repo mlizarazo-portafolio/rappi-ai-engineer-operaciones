@@ -1,4 +1,5 @@
-# Documentación del caso
+# Documentación del monorepo
 
-- **Briefs:** `briefs/caso_operaciones_rappi.md`, `briefs/caso_competitive_intelligence_rappi.md`
-- **Datos Operaciones:** `../data/operaciones/` (tres CSV)
+- **Caso 1 (Operaciones):** `../caso_1_operaciones/README.md` y enunciado `../caso_1_operaciones/enunciado.md`
+- **Caso 2 (Competitive Intelligence):** `../caso_2_competitive_intelligence/README.md` y enunciado `../caso_2_competitive_intelligence/enunciado.md`
+- **Datos caso 1:** `../data/caso_1_operaciones/`

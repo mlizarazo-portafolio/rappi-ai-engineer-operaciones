@@ -1,8 +1,11 @@
 """
 Bot conversacional — caso Operaciones Rappi.
 
-Desde la raíz del repo (con venv activado):
+Desde `caso_1_operaciones/` (con venv activado):
   streamlit run operaciones/app.py
+
+O desde la raíz del monorepo:
+  streamlit run caso_1_operaciones/operaciones/app.py
 """
 
 from __future__ import annotations
@@ -10,11 +13,11 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-# Streamlit pone en sys.path la carpeta del script (`operaciones/`), no la raíz del repo;
-# hace falta la raíz para `import operaciones`.
-_ROOT = Path(__file__).resolve().parents[1]
-if str(_ROOT) not in sys.path:
-    sys.path.insert(0, str(_ROOT))
+# El paquete `operaciones` vive bajo `caso_1_operaciones/`; Streamlit no lo añade a sys.path.
+_PKG_PARENT = Path(__file__).resolve().parents[1]
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_PKG_PARENT) not in sys.path:
+    sys.path.insert(0, str(_PKG_PARENT))
 
 import os
 from typing import Any
@@ -28,7 +31,7 @@ from operaciones.data import load_metrics, load_orders
 from operaciones.data_dictionary import load_data_dictionary_for_prompt
 from operaciones.tools import ToolExecutor
 
-load_dotenv(_ROOT / ".env")
+load_dotenv(_REPO_ROOT / ".env")
 
 st.set_page_config(page_title="Rappi Ops Bot", page_icon="📊", layout="wide")
 
@@ -56,7 +59,7 @@ def _system_prompt_full() -> str:
 def main() -> None:
     st.title("Rappi — bot de operaciones")
     st.caption(
-        "Datos: `data/operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`. "
+        "Datos: `data/caso_1_operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`. "
         "Requiere `OPENAI_API_KEY`."
     )
 

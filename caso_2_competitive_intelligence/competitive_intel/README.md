@@ -13,9 +13,12 @@ Objetivo del brief: comparar **Rappi**, **Uber Eats** y **DiDi Food** en precios
 
 ## Comandos
 
+Ejecutar desde la carpeta **`caso_2_competitive_intelligence/`** (el padre de este paquete):
+
 ```bash
+cd caso_2_competitive_intelligence
 python -m competitive_intel demo
 python -m competitive_intel report
 ```
 
-Salida del informe en `competitive_intel/reports/`.
+Salida del informe en `competitive_intel/reports/` (ruta relativa a esta carpeta).

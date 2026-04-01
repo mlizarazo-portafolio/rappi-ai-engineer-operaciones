@@ -112,7 +112,7 @@ def build_markdown_report(b: InsightsBundle) -> str:
     lines: list[str] = [
         "# Informe ejecutivo — insights operacionales (automático)",
         "",
-        f"_Generado: {now}. Archivos: `data/operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`._",
+        f"_Generado: {now}. Archivos: `data/caso_1_operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`._",
         "",
         "## Resumen ejecutivo (hallazgos críticos)",
         "",

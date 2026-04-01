@@ -6,4 +6,4 @@ Para cumplir el brief con datos reales:
 2. Implementa un módulo por plataforma (Uber Eats, DiDi Food, Rappi) leyendo `addresses_mx.json`.
 3. Respeta rate limits, `robots.txt` y términos de uso; documenta bloqueos.
 
-El comando `python -m competitive_intel scrape` hoy genera el mismo CSV que `demo` como **placeholder** hasta conectar selectores reales.
+Desde `caso_2_competitive_intelligence/`, el comando `python -m competitive_intel scrape` hoy genera el mismo CSV que `demo` como **placeholder** hasta conectar selectores reales.

@@ -30,7 +30,9 @@ def _fig_bar_means(df: pd.DataFrame, col: str, title: str, ylabel: str, out: Pat
 def build_report(csv_path: Path | None = None) -> Path:
     csv_path = csv_path or default_scrape_csv()
     if not csv_path.exists():
-        raise FileNotFoundError(f"No existe {csv_path}. Ejecuta: python -m competitive_intel demo")
+        raise FileNotFoundError(
+            f"No existe {csv_path}. Desde caso_2_competitive_intelligence/: python -m competitive_intel demo"
+        )
 
     df = pd.read_csv(csv_path)
     rdir = reports_dir()

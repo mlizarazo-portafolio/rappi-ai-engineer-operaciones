@@ -71,7 +71,7 @@ class ToolExecutor:
         self._metric_names = sorted(metrics["METRIC"].dropna().unique().tolist())
 
     def list_available_metrics(self) -> str:
-        lines = ["Métricas disponibles en `data/operaciones/RAW_INPUT_METRICS`:"]
+        lines = ["Métricas disponibles en `data/caso_1_operaciones/RAW_INPUT_METRICS`:"]
         lines += [f"- {m}" for m in self._metric_names]
         return "\n".join(lines)
 
