@@ -23,8 +23,9 @@ import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from operaciones.chat import SYSTEM_PROMPT, run_chat_turn
+from operaciones.chat import build_system_prompt, run_chat_turn
 from operaciones.data import load_metrics, load_orders
+from operaciones.data_dictionary import load_data_dictionary_for_prompt
 from operaciones.tools import ToolExecutor
 
 load_dotenv(_ROOT / ".env")
@@ -47,9 +48,17 @@ def _datasets() -> tuple[Any, Any]:
     return load_metrics(), load_orders()
 
 
+@st.cache_data
+def _system_prompt_full() -> str:
+    return build_system_prompt(load_data_dictionary_for_prompt())
+
+
 def main() -> None:
     st.title("Rappi — bot de operaciones")
-    st.caption("Datos: `docs/RAW_INPUT_METRICS.csv` y `docs/RAW_ORDERS.csv`. Requiere `OPENAI_API_KEY`.")
+    st.caption(
+        "Datos: `docs/RAW_INPUT_METRICS.csv`, `docs/RAW_ORDERS.csv` y diccionario `docs/RAW_SUMMARY.csv`. "
+        "Requiere `OPENAI_API_KEY`."
+    )
 
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
@@ -62,8 +71,9 @@ def main() -> None:
     metrics, orders = _datasets()
     executor = ToolExecutor(metrics, orders)
 
+    system_content = _system_prompt_full()
     if "api_messages" not in st.session_state:
-        st.session_state.api_messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        st.session_state.api_messages = [{"role": "system", "content": system_content}]
 
     with st.sidebar:
         st.subheader("Sugerencias")
@@ -71,7 +81,7 @@ def main() -> None:
             if st.button(s[:72] + ("…" if len(s) > 72 else ""), key=f"sug_{i}"):
                 st.session_state["pending_prompt"] = s
         if st.button("Nueva conversación"):
-            st.session_state.api_messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+            st.session_state.api_messages = [{"role": "system", "content": _system_prompt_full()}]
             st.session_state.pop("pending_prompt", None)
             st.rerun()
 

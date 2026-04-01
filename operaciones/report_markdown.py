@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 import markdown
 import pandas as pd
 
+from operaciones.data_dictionary import load_data_dictionary_for_prompt
 from operaciones.insights_engine import KEY_METRIC_BENCHMARK, InsightsBundle
 
 
@@ -111,7 +112,7 @@ def build_markdown_report(b: InsightsBundle) -> str:
     lines: list[str] = [
         "# Informe ejecutivo — insights operacionales (automático)",
         "",
-        f"_Generado: {now}. Datos: métricas y órdenes suministrados para el caso._",
+        f"_Generado: {now}. Archivos usados: `RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, diccionario `RAW_SUMMARY.csv`._",
         "",
         "## Resumen ejecutivo (hallazgos críticos)",
         "",
@@ -170,6 +171,10 @@ def build_markdown_report(b: InsightsBundle) -> str:
         "Zonas **High Priority / Prioritized** con órdenes L0W altas (P75 por país) y margen o Perfect Orders en cuarto inferior.",
         "",
         _md_table(b.opportunities),
+        "",
+        "## Apéndice — Diccionario de columnas (RAW_SUMMARY.csv)",
+        "",
+        load_data_dictionary_for_prompt(max_chars=8000),
         "",
         "---",
         "",

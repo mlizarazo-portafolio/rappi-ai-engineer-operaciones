@@ -51,7 +51,11 @@ Modelo: `gpt-4o-mini`. Precios oficiales en [OpenAI Pricing](https://platform.op
 
 ## Datos
 
-`docs/RAW_INPUT_METRICS.csv` y `docs/RAW_ORDERS.csv` (según brief del caso).
+Según el enunciado se usan **los tres archivos** en `docs/`:
+
+- `RAW_INPUT_METRICS.csv` — métricas por zona y semana (`L0W_ROLL`…`L8W_ROLL`).
+- `RAW_ORDERS.csv` — volumen de órdenes (`L0W`…`L8W`).
+- `RAW_SUMMARY.csv` — diccionario de columnas; se inyecta en el contexto del bot y en el apéndice del informe.
 
 **Ideas de preguntas para la demo:** top zonas por Lead Penetration en MX; comparar Perfect Orders Wealthy vs Non Wealthy en MX; tendencia de Gross Profit UE en Chapinero; promedio Lead Penetration por país; zonas con alto Lead Penetration y bajo Perfect Orders; crecimiento de órdenes últimas 5 semanas con contexto de métricas.
 

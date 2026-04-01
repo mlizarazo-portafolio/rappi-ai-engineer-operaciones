@@ -22,6 +22,13 @@ Reglas:
 """
 
 
+def build_system_prompt(data_dictionary_excerpt: str = "") -> str:
+    """System prompt completo; incluye diccionario RAW_SUMMARY cuando se proporciona."""
+    if not data_dictionary_excerpt.strip():
+        return SYSTEM_PROMPT
+    return SYSTEM_PROMPT + "\n\n" + data_dictionary_excerpt.strip()
+
+
 def run_chat_turn(
     client: OpenAI,
     api_messages: list[dict[str, Any]],
