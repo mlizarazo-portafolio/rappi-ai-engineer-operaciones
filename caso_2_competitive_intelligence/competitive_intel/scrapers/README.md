@@ -51,3 +51,12 @@ Salida por defecto: `data/caso_2_competitive_intelligence/output/scrape_latest.c
 ## Demo sintético
 
 Si no necesitas datos reales: `python -m competitive_intel demo`.
+
+## Roadmap para acercarse al enunciado (datos “de verdad”)
+
+1. **APIs oficiales / partners:** Uber Eats, Rappi y DiDi exponen APIs orientadas a **restaurantes aliados** (menús, órdenes), no a un “panel competitivo” público. En una empresa real, CI suele combinar **datos propios**, **proveedores de datos** o acuerdos; no asumir que esas APIs cubren al competidor sin contrato.
+2. **Geocodificación:** Resolver cada dirección del JSON a **lat/lon + place_id** (p. ej. Google Places / Mapbox) y usar la **misma coordenada** en las tres UIs (o deep links si existen) en lugar de solo texto “barrio, ciudad”.
+3. **Interceptar red:** En Playwright, `page.on("response", …)` sobre JSON de feed/checkout de Uber/Rappi suele ser **más estable** que regex sobre `innerText` (cuando no vaya cifrado).
+4. **Sesión / anti-bot:** `storage_state` con login de prueba (si el reclutador lo permite), user-agent real, `--headed` en depuración, ritmo humano; documentar límites legales.
+5. **DiDi:** Valorar **Appium** sobre app real o aceptar cobertura parcial web + nota en el informe.
+6. **Validación:** Reglas de sanidad en fees (como `fee_sanity.py`) + columna `confidence` / exclusiones en el informe.

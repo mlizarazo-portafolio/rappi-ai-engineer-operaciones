@@ -7,6 +7,7 @@ from typing import Any
 
 from playwright.sync_api import Page
 
+from competitive_intel.scrapers.fee_sanity import sanitize_fees_mxn
 from competitive_intel.scrapers.schema import PRODUCTS, build_row
 from competitive_intel.scrapers.text_extract import (
     delivery_fee_from_text,
@@ -26,10 +27,10 @@ def _fill_delivery_address(page: Page, address: dict[str, Any]) -> bool:
     ]
     inp = None
     for sel in selectors:
-        loc = page.locator(sel).first
+        loc = page.locator(sel)
         try:
             if loc.count() > 0:
-                inp = loc
+                inp = loc.first
                 break
         except Exception:
             continue
@@ -141,12 +142,15 @@ def scrape_uber_for_address(page: Page, address: dict[str, Any]) -> list[dict[st
         return rows
 
     try:
-        body = page.evaluate("() => document.body.innerText.slice(0, 120000)")
+        body = page.evaluate(
+            """() => (document.body.innerText || '').normalize('NFC').slice(0, 200000)"""
+        )
     except Exception:
         body = ""
 
     delivery = delivery_fee_from_text(body)
     service = service_fee_from_text(body)
+    delivery, service = sanitize_fees_mxn(delivery, service)
     eta = eta_minutes_from_text(body)
     promo = "Ninguna visible"
     if re.search(r"free delivery|gratis|off|descuento|promo", body, re.I):
