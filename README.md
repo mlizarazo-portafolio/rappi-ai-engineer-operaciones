@@ -84,6 +84,18 @@ Resumen de fases: `StepByStepOperaciones/` y `plan/plan_operaciones.md`.
 - Sin gráficos automáticos en el bot ni export CSV desde la UI (bonus del brief).
 - Sin despliegue en nube requerido; corre en `localhost`.
 
+## Subir a GitHub (después de `git init` y primer commit)
+
+1. Crea un repositorio **vacío** en GitHub (sin README si ya tienes uno local).
+2. En la carpeta del proyecto:
+
+```powershell
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git push -u origin main
+```
+
+No subas `.env` ni `.venv` (ya están en `.gitignore`). Los informes en `reports/` se regeneran con `python -m operaciones.generate_report`.
+
 ## Licencia / uso
 
 Ejercicio de reclutamiento; datos y enfoque según brief Rappi en `docs/`.
