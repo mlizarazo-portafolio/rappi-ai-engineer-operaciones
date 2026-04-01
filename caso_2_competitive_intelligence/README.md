@@ -14,9 +14,12 @@ El CSV generado por el demo va en **`../data/caso_2_competitive_intelligence/out
 Desde esta carpeta (`caso_2_competitive_intelligence/`):
 
 ```powershell
-python -m competitive_intel demo
+playwright install chromium
+python -m competitive_intel scrape --limit-addresses 1 --platforms rappi
 python -m competitive_intel report
 ```
+
+O sin navegador: `python -m competitive_intel demo` y luego `report`.
 
 Informe y figuras: `competitive_intel/reports/`.
 

@@ -31,7 +31,8 @@ def build_report(csv_path: Path | None = None) -> Path:
     csv_path = csv_path or default_scrape_csv()
     if not csv_path.exists():
         raise FileNotFoundError(
-            f"No existe {csv_path}. Desde caso_2_competitive_intelligence/: python -m competitive_intel demo"
+            f"No existe {csv_path}. Desde caso_2_competitive_intelligence/: "
+            "python -m competitive_intel demo | scrape | scrape --fallback-demo"
         )
 
     df = pd.read_csv(csv_path)

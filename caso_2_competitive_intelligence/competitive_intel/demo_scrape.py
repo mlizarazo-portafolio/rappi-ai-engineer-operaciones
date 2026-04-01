@@ -3,7 +3,7 @@ Genera CSV de demostración (México, Rappi / Uber Eats / DiDi Food).
 
 El brief pide scraping real; las apps cambian y bloquean bots. Este módulo
 produce datos **sintéticos reproducibles** (seed fija) para pipeline e informe.
-Para scrape real, extiende `scrapers/` con Playwright y selectores vigentes.
+Scrape web real: `python -m competitive_intel scrape` (Playwright, ver `scrapers/README.md`).
 """
 
 from __future__ import annotations

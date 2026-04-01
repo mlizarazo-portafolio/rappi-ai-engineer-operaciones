@@ -53,7 +53,7 @@ python -m competitive_intel report
 - CSV demo: `data/caso_2_competitive_intelligence/output/scrape_latest.csv`
 - Informe: `caso_2_competitive_intelligence/competitive_intel/reports/`
 
-`python -m competitive_intel scrape` hoy equivale a `demo`. Scrape real: `competitive_intel/scrapers/README.md` (ruta bajo `caso_2_competitive_intelligence/`).
+`python -m competitive_intel scrape` usa **Playwright** (webs públicas). Requiere `playwright install chromium`. Detalle y límites: `caso_2_competitive_intelligence/competitive_intel/scrapers/README.md`. Opción sin red: `demo`.
 
 ---
 

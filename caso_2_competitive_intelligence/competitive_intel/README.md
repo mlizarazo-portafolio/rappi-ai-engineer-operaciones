@@ -9,7 +9,7 @@ Objetivo del brief: comparar **Rappi**, **Uber Eats** y **DiDi Food** en precios
 | `addresses_mx.json` | 20 ubicaciones + `zone_type` (justificación en campo `justification`) |
 | `demo_scrape.py` | Genera CSV **sintético** con seed fija (pipeline + informe sin depender de anti-bot) |
 | `report_ci.py` | Markdown + 3 PNG (ticket, fees, ETA) |
-| `scrapers/README.md` | Cómo extender a Playwright real |
+| `scrapers/` | Playwright: Rappi + Uber (+ intento DiDi); ver `scrapers/README.md` |
 
 ## Comandos
 
@@ -17,7 +17,10 @@ Ejecutar desde la carpeta **`caso_2_competitive_intelligence/`** (el padre de es
 
 ```bash
 cd caso_2_competitive_intelligence
-python -m competitive_intel demo
+pip install -r ../requirements.txt   # desde raíz del monorepo, si aún no
+playwright install chromium
+python -m competitive_intel scrape --limit-addresses 2 --platforms rappi
+python -m competitive_intel demo     # alternativa: CSV sintético
 python -m competitive_intel report
 ```
 
