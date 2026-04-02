@@ -2,6 +2,8 @@
 .venv/
 .env
 .env.local
+# Sesión Playwright (cookies DiDi u otras; puede identificar la cuenta)
+didi_storage_state.json
 
 # Python
 __pycache__/
@@ -15,9 +17,11 @@ __pycache__/
 reports/*
 !reports/.gitkeep
 
-# Scrapes competitivos (CSV/JSON generados; no commitear corridas reales)
+# Scrapes competitivos: por defecto no subir corridas intermedias.
+# Excepción: `scrape_latest.csv` versionado como artefacto de entrega del caso 2.
 data/caso_2_competitive_intelligence/output/*
 !data/caso_2_competitive_intelligence/output/.gitkeep
+!data/caso_2_competitive_intelligence/output/scrape_latest.csv
 
 # IDE / OS
 .idea/

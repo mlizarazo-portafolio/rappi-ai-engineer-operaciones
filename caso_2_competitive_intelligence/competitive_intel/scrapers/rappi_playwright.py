@@ -8,6 +8,7 @@ from typing import Any
 from playwright.sync_api import Page, TimeoutError as PlaywrightTimeout
 
 from competitive_intel.scrapers.geo import rappi_slug_for_city
+from competitive_intel.scrapers.rate_limit import cooldown_sleep, page_looks_rate_limited
 from competitive_intel.scrapers.rappi_products import EXTRACTORS
 from competitive_intel.scrapers.schema import PRODUCTS, build_row
 from competitive_intel.scrapers.text_extract import (
@@ -59,28 +60,40 @@ def _goto_mcdonalds(page: Page, slug: str) -> bool:
         f"https://www.rappi.com.mx/{slug}/restaurantes?q=mcdonalds",
     ]
     for url in urls:
-        try:
-            page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(1500)
-            _dismiss_rappi_cookies(page)
-            page.wait_for_timeout(800)
-            if page.url.startswith("https://www.rappi.com.mx/") and (
-                "mcdonald" in page.url.lower() or "q=mcdonalds" in page.url.lower()
-            ):
-                # En búsqueda, clic en primer McDonald's si hace falta
-                if "q=mcdonalds" in page.url.lower():
-                    try:
-                        links = page.locator('a[href*="/delivery/"][href*="mcdonald"]')
-                        if links.count() > 0:
-                            links.first.click(timeout=8000)
-                            page.wait_for_load_state("domcontentloaded", timeout=20000)
-                            page.wait_for_timeout(1200)
-                            _dismiss_rappi_cookies(page)
-                    except Exception:
-                        pass
-                return True
-        except Exception:
-            continue
+        for attempt in range(5):
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(1500)
+                if page_looks_rate_limited(page):
+                    cooldown_sleep(35.0 + attempt * 40.0, "Rappi: too_many_requests / bd.error")
+                    continue
+                _dismiss_rappi_cookies(page)
+                page.wait_for_timeout(800)
+                if page_looks_rate_limited(page):
+                    cooldown_sleep(35.0 + attempt * 40.0, "Rappi: rate limit tras cookies")
+                    continue
+                if page.url.startswith("https://www.rappi.com.mx/") and (
+                    "mcdonald" in page.url.lower() or "q=mcdonalds" in page.url.lower()
+                ):
+                    # En búsqueda, clic en primer McDonald's si hace falta
+                    if "q=mcdonalds" in page.url.lower():
+                        try:
+                            links = page.locator('a[href*="/delivery/"][href*="mcdonald"]')
+                            if links.count() > 0:
+                                links.first.click(timeout=8000)
+                                page.wait_for_load_state("domcontentloaded", timeout=20000)
+                                page.wait_for_timeout(1200)
+                                _dismiss_rappi_cookies(page)
+                        except Exception:
+                            pass
+                    if page_looks_rate_limited(page):
+                        cooldown_sleep(35.0 + attempt * 40.0, "Rappi: rate limit en menú")
+                        continue
+                    return True
+                break
+            except Exception:
+                break
+        continue
     return False
 
 
@@ -137,6 +150,26 @@ def scrape_rappi_for_address(page: Page, address: dict[str, Any]) -> list[dict[s
         )
     except Exception:
         body = ""
+
+    if page_looks_rate_limited(page) or (
+        body and "too_many_requests" in body.lower() and len(body.strip()) < 800
+    ):
+        cooldown_sleep(75.0, "Rappi: rate limit antes de leer menú")
+        try:
+            page.reload(wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(3500)
+            _dismiss_rappi_cookies(page)
+            for _ in range(6):
+                page.mouse.wheel(0, 1400)
+                page.wait_for_timeout(350)
+        except Exception:
+            pass
+        try:
+            body = page.evaluate(
+                """() => (document.body.innerText || '').normalize('NFC').slice(0, 200000)"""
+            )
+        except Exception:
+            body = ""
 
     eta = eta_minutes_from_text(body)
     delivery = None

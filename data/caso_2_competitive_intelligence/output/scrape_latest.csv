@@ -1,0 +1,121 @@
+data_source,platform,address_id,city,neighborhood,zone_type,lat,lon,product_name,item_price_mxn,delivery_fee_mxn,service_fee_mxn,total_checkout_mxn,eta_minutes,promotions_visible,store_available,scraped_at
+playwright_rappi,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:42Z
+playwright_rappi,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:42Z
+playwright_rappi,rappi,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:42Z
+playwright_rappi,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Coca-Cola 600ml,65.0,0.0,,65.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:38:44Z
+playwright_rappi,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Combo Big Mac,218.0,0.0,,218.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:38:44Z
+playwright_rappi,rappi,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,McNuggets 10 piezas,179.0,0.0,,179.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:38:44Z
+playwright_rappi,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Coca-Cola 600ml,65.0,0.0,,65.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:39:30Z
+playwright_rappi,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Combo Big Mac,218.0,0.0,,218.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:39:30Z
+playwright_rappi,rappi,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,McNuggets 10 piezas,179.0,0.0,,179.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:39:30Z
+playwright_rappi,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Coca-Cola 600ml,65.0,0.0,,65.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:40:15Z
+playwright_rappi,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Combo Big Mac,218.0,0.0,,218.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:40:15Z
+playwright_rappi,rappi,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,McNuggets 10 piezas,179.0,0.0,,179.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:40:15Z
+playwright_rappi,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Coca-Cola 600ml,65.0,0.0,,65.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:41:01Z
+playwright_rappi,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Combo Big Mac,218.0,0.0,,218.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:41:01Z
+playwright_rappi,rappi,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,McNuggets 10 piezas,179.0,0.0,,179.0,,Promoción visible en página (texto genérico),True,2026-04-02T17:41:01Z
+playwright_rappi,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:47Z
+playwright_rappi,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:47Z
+playwright_rappi,rappi,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:47Z
+playwright_rappi,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:18Z
+playwright_rappi,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:18Z
+playwright_rappi,rappi,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:13:18Z
+playwright_rappi,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Coca-Cola 600ml,,0.0,,,13.0,Promoción visible en página (texto genérico),False,2026-04-02T17:45:08Z
+playwright_rappi,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Combo Big Mac,,0.0,,,13.0,Promoción visible en página (texto genérico),False,2026-04-02T17:45:08Z
+playwright_rappi,rappi,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,McNuggets 10 piezas,,0.0,,,13.0,Promoción visible en página (texto genérico),False,2026-04-02T17:45:08Z
+playwright_rappi,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:41:31Z
+playwright_rappi,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:41:31Z
+playwright_rappi,rappi,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:41:31Z
+playwright_rappi,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:02Z
+playwright_rappi,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:02Z
+playwright_rappi,rappi,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:02Z
+playwright_rappi,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:12:45Z
+playwright_rappi,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:12:45Z
+playwright_rappi,rappi,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:12:45Z
+playwright_rappi,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:13Z
+playwright_rappi,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:13Z
+playwright_rappi,rappi,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:46:13Z
+playwright_rappi,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:35Z
+playwright_rappi,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:35Z
+playwright_rappi,rappi,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:35Z
+playwright_rappi,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:35Z
+playwright_rappi,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:35Z
+playwright_rappi,rappi,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:42:35Z
+playwright_rappi,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:04Z
+playwright_rappi,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:04Z
+playwright_rappi,rappi,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:04Z
+playwright_rappi,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:14:20Z
+playwright_rappi,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:14:20Z
+playwright_rappi,rappi,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T18:14:20Z
+playwright_rappi,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:35Z
+playwright_rappi,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:35Z
+playwright_rappi,rappi,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:43:35Z
+playwright_rappi,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:05Z
+playwright_rappi,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:05Z
+playwright_rappi,rappi,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:44:05Z
+playwright_rappi,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:45:40Z
+playwright_rappi,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:45:40Z
+playwright_rappi,rappi,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:45:40Z
+playwright_rappi,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Coca-Cola 600ml,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:47:15Z
+playwright_rappi,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Combo Big Mac,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:47:15Z
+playwright_rappi,rappi,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,McNuggets 10 piezas,,0.0,,,,Promoción visible en página (texto genérico),False,2026-04-02T17:47:15Z
+playwright_uber_eats,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Coca-Cola 600ml,,,,,21.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:34:52Z
+playwright_uber_eats,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,Combo Big Mac,,,,,21.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:34:52Z
+playwright_uber_eats,uber_eats,MX_AGS_01,Aguascalientes,Centro,urban_secondary,21.885,-102.291,McNuggets 10 piezas,,,,,21.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:34:52Z
+playwright_uber_eats,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Coca-Cola 600ml,55.0,,,55.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:22:07Z
+playwright_uber_eats,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,Combo Big Mac,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:22:07Z
+playwright_uber_eats,uber_eats,MX_CDMX_01,Ciudad de México,Roma Norte,urban_core,19.4194,-99.1556,McNuggets 10 piezas,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:22:07Z
+playwright_uber_eats,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Coca-Cola 600ml,55.0,,,55.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:23:02Z
+playwright_uber_eats,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,Combo Big Mac,99.0,,,99.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:23:02Z
+playwright_uber_eats,uber_eats,MX_CDMX_02,Ciudad de México,Polanco,urban_core,19.433,-99.195,McNuggets 10 piezas,145.0,,,145.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:23:02Z
+playwright_uber_eats,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Coca-Cola 600ml,65.0,,,65.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:23:56Z
+playwright_uber_eats,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,Combo Big Mac,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:23:56Z
+playwright_uber_eats,uber_eats,MX_CDMX_03,Ciudad de México,Coyoacán Centro,urban_core,19.35,-99.162,McNuggets 10 piezas,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:23:56Z
+playwright_uber_eats,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Coca-Cola 600ml,65.0,,,65.0,15.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:24:56Z
+playwright_uber_eats,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,Combo Big Mac,,,,,15.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:24:56Z
+playwright_uber_eats,uber_eats,MX_CDMX_04,Ciudad de México,Iztapalapa Sur,periphery,19.32,-99.05,McNuggets 10 piezas,,,,,15.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:24:56Z
+playwright_uber_eats,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Coca-Cola 600ml,49.0,,,49.0,,Texto promocional visible (sin clasificar),True,2026-04-02T17:41:11Z
+playwright_uber_eats,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,Combo Big Mac,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:41:11Z
+playwright_uber_eats,uber_eats,MX_CHH_01,Chihuahua,Centro,urban_secondary,28.632,-106.069,McNuggets 10 piezas,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:41:11Z
+playwright_uber_eats,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Coca-Cola 600ml,55.0,,,55.0,12.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:40:15Z
+playwright_uber_eats,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,Combo Big Mac,,,,,12.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:40:15Z
+playwright_uber_eats,uber_eats,MX_CUL_01,Culiacán,Centro,urban_secondary,24.806,-107.394,McNuggets 10 piezas,,,,,12.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:40:15Z
+playwright_uber_eats,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Coca-Cola 600ml,65.0,,,65.0,20.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:32:14Z
+playwright_uber_eats,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,Combo Big Mac,99.0,,,99.0,20.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:32:14Z
+playwright_uber_eats,uber_eats,MX_CUN_01,Cancún,Zona Hotelera,tourism,21.133,-86.746,McNuggets 10 piezas,,,,,20.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:32:14Z
+playwright_uber_eats,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Coca-Cola 600ml,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:25:50Z
+playwright_uber_eats,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,Combo Big Mac,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:25:50Z
+playwright_uber_eats,uber_eats,MX_GDL_01,Guadalajara,Zapopan Centro,urban_core,20.676,-103.348,McNuggets 10 piezas,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:25:50Z
+playwright_uber_eats,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Coca-Cola 600ml,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:26:43Z
+playwright_uber_eats,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,Combo Big Mac,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:26:43Z
+playwright_uber_eats,uber_eats,MX_GDL_02,Guadalajara,Tlaquepaque Centro,urban_secondary,20.64,-103.31,McNuggets 10 piezas,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:26:43Z
+playwright_uber_eats,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Coca-Cola 600ml,49.0,,,49.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:39:19Z
+playwright_uber_eats,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,Combo Big Mac,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:39:19Z
+playwright_uber_eats,uber_eats,MX_HMO_01,Hermosillo,Centro,urban_secondary,29.089,-110.961,McNuggets 10 piezas,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:39:19Z
+playwright_uber_eats,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Coca-Cola 600ml,55.0,,12.0,67.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:33:58Z
+playwright_uber_eats,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,Combo Big Mac,,,12.0,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:33:58Z
+playwright_uber_eats,uber_eats,MX_LEO_01,León,Centro,urban_secondary,21.125,-101.686,McNuggets 10 piezas,,,12.0,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:33:58Z
+playwright_uber_eats,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Coca-Cola 600ml,55.0,,,55.0,14.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:31:22Z
+playwright_uber_eats,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,Combo Big Mac,,,,,14.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:31:22Z
+playwright_uber_eats,uber_eats,MX_MID_01,Mérida,Paseo Montejo,urban_secondary,20.967,-89.623,McNuggets 10 piezas,,,,,14.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:31:22Z
+playwright_uber_eats,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Coca-Cola 600ml,59.0,,,59.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:27:34Z
+playwright_uber_eats,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,Combo Big Mac,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:27:34Z
+playwright_uber_eats,uber_eats,MX_MTY_01,Monterrey,San Pedro,urban_core,25.657,-100.402,McNuggets 10 piezas,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:27:34Z
+playwright_uber_eats,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Coca-Cola 600ml,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:28:22Z
+playwright_uber_eats,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,Combo Big Mac,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:28:22Z
+playwright_uber_eats,uber_eats,MX_MTY_02,Monterrey,García,periphery,25.78,-100.59,McNuggets 10 piezas,,,,,,Texto promocional visible (sin clasificar),False,2026-04-02T17:28:22Z
+playwright_uber_eats,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Coca-Cola 600ml,49.0,,,49.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:42:03Z
+playwright_uber_eats,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,Combo Big Mac,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:42:03Z
+playwright_uber_eats,uber_eats,MX_MXL_01,Mexicali,Centro,border_urban,32.624,-115.454,McNuggets 10 piezas,,,,,10.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:42:03Z
+playwright_uber_eats,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Coca-Cola 600ml,45.0,,,45.0,12.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:29:21Z
+playwright_uber_eats,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,Combo Big Mac,165.0,,,165.0,12.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:29:21Z
+playwright_uber_eats,uber_eats,MX_PUE_01,Puebla,Angelópolis,urban_secondary,19.0,-98.25,McNuggets 10 piezas,165.0,,,165.0,12.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:29:21Z
+playwright_uber_eats,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Coca-Cola 600ml,55.0,,,55.0,15.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:30:27Z
+playwright_uber_eats,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,Combo Big Mac,99.0,,,99.0,15.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:30:27Z
+playwright_uber_eats,uber_eats,MX_QRO_01,Querétaro,Centro Histórico,urban_secondary,20.588,-100.388,McNuggets 10 piezas,145.0,,,145.0,15.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:30:27Z
+playwright_uber_eats,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Coca-Cola 600ml,49.0,,,49.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:33:08Z
+playwright_uber_eats,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,Combo Big Mac,129.0,,,129.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:33:08Z
+playwright_uber_eats,uber_eats,MX_TIJ_01,Tijuana,Zona Río,border_urban,32.53,-117.02,McNuggets 10 piezas,149.0,,,149.0,10.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:33:08Z
+playwright_uber_eats,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Coca-Cola 600ml,52.0,,,52.0,7.0,Texto promocional visible (sin clasificar),True,2026-04-02T17:38:21Z
+playwright_uber_eats,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,Combo Big Mac,,,,,7.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:38:21Z
+playwright_uber_eats,uber_eats,MX_VER_01,Veracruz,Centro,coastal,19.173,-96.134,McNuggets 10 piezas,,,,,7.0,Texto promocional visible (sin clasificar),False,2026-04-02T17:38:21Z

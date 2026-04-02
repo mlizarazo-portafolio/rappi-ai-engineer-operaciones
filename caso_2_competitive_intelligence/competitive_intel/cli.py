@@ -7,8 +7,9 @@ import sys
 from pathlib import Path
 
 from competitive_intel.demo_scrape import write_demo_scrape
+from competitive_intel.merge_scrapes import merge_scrape_csvs
 from competitive_intel.paths import default_scrape_csv
-from competitive_intel.scrapers.live_pipeline import run_live_scrape
+from competitive_intel.scrapers.live_pipeline import run_live_scrape, run_save_didi_session
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -29,17 +30,71 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument(
         "--platforms",
         type=str,
-        default="rappi,uber_eats,didi_food",
-        help="Comma-separated: rappi,uber_eats,didi_food",
+        default="uber_eats,rappi",
+        help="Comma-separated: uber_eats,rappi,didi_food (orden: Uber primero suele ir mejor en corridas largas)",
     )
     s.add_argument("--limit-addresses", type=int, default=None, help="Solo las primeras N direcciones (pruebas)")
-    s.add_argument("--headed", action="store_true", help="Navegador visible (depuración)")
+    s.add_argument(
+        "--skip-addresses",
+        type=int,
+        default=0,
+        help="Salta las primeras K direcciones del CSV (útil para segunda mitad en corridas partidas)",
+    )
+    s.add_argument(
+        "--headed",
+        "--show-browser",
+        action="store_true",
+        help="Ventana del navegador visible: ves en vivo qué hace Playwright (clics, búsqueda, etc.)",
+    )
     s.add_argument("--delay", type=float, default=2.0, help="Pausa entre pasos de plataforma (s)")
     s.add_argument(
         "--fallback-demo",
         action="store_true",
         help="Si falla el scrape (p.ej. sin Playwright), escribe CSV sintético como demo",
     )
+    s.add_argument(
+        "--browser",
+        type=str,
+        default=None,
+        choices=("chromium", "firefox", "webkit"),
+        help="Motor Playwright (default: env PLAYWRIGHT_BROWSER o firefox). Chromium si lo prefieres.",
+    )
+    s.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Sin líneas de progreso en consola (por defecto se muestra avance por paso)",
+    )
+
+    ss = sub.add_parser(
+        "save-didi-session",
+        help="Abre DiDi, inicias sesión a mano; Enter guarda cookies (PLAYWRIGHT_STORAGE_STATE). Ver .env.example",
+    )
+    ss.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        default=None,
+        help="Ruta del JSON de sesión (default: didi_storage_state.json en la raíz del repo)",
+    )
+    ss.add_argument(
+        "--headless",
+        action="store_true",
+        help="Sin ventana (no sirve para login; solo pruebas)",
+    )
+    ss.add_argument(
+        "--browser",
+        type=str,
+        default=None,
+        choices=("chromium", "firefox", "webkit"),
+        help="Motor Playwright (default: env o firefox)",
+    )
+
+    m = sub.add_parser(
+        "merge-scrapes",
+        help="Fusiona varios CSV de scrape; por (plataforma, dirección, producto) gana fila con precio",
+    )
+    m.add_argument("inputs", nargs="+", type=Path, help="Rutas a CSV")
+    m.add_argument("-o", "--output", type=Path, default=None, help="Salida (default: scrape_latest.csv)")
 
     args = p.parse_args(argv)
 
@@ -55,8 +110,11 @@ def main(argv: list[str] | None = None) -> int:
                 output=args.output,
                 platforms=plats,
                 limit_addresses=args.limit_addresses,
+                skip_addresses=max(0, args.skip_addresses),
                 headless=not args.headed,
                 delay_sec=args.delay,
+                browser=args.browser,
+                progress=not args.quiet,
             )
             print(f"CSV scrape (Playwright): {path}")
             return 0
@@ -67,10 +125,31 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"Fallback demo: {path}", file=sys.stderr)
                 return 0
             print(
-                "Instala navegador: playwright install chromium. "
+                "Instala navegador: playwright install firefox  (o chromium con --browser chromium). "
                 "O usa: python -m competitive_intel demo",
                 file=sys.stderr,
             )
+            return 1
+
+    if args.cmd == "merge-scrapes":
+        try:
+            out = merge_scrape_csvs(list(args.inputs), args.output)
+            print(f"CSV fusionado: {out}")
+            return 0
+        except Exception as e:
+            print(f"Error: {e}", file=sys.stderr)
+            return 1
+
+    if args.cmd == "save-didi-session":
+        try:
+            run_save_didi_session(
+                output=args.output,
+                headless=args.headless,
+                browser=args.browser,
+            )
+            return 0
+        except Exception as e:
+            print(f"Error: {e}", file=sys.stderr)
             return 1
 
     if args.cmd == "report":

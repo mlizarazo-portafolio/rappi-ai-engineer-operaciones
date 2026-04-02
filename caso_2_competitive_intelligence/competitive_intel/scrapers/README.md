@@ -2,13 +2,17 @@
 
 ## Qué hace este código
 
-Automatiza un **navegador real** (Chromium) contra las **webs públicas** de:
+Automatiza un **navegador real** (por defecto **Firefox**; override con `PLAYWRIGHT_BROWSER` o `--browser`) contra las **webs públicas** de:
 
 - **Rappi** (`rappi.com.mx`): entra a McDonald’s por ciudad (slug) y lee texto visible del menú.
 - **Uber Eats** (`ubereats.com/mx-en/`): escribe dirección en el typeahead, busca “McDonald’s” y lee la página de tienda.
-- **DiDi Food** (`didi-food.com`): intento limitado; muchas veces la experiencia empuja a la app, sin precios fiables en web.
+- **DiDi Food** (`didi-food.com`): a menudo exige **inicio de sesión** en web o empuja a la app; sin precios fiables o sin sesión el CSV lo documenta.
 
 Los precios y fees se obtienen con **heurísticas sobre el texto** (`text_extract.py`), no con APIs oficiales. Si la UI cambia, habrá que ajustar selectores o regex.
+
+### DiDi e inicio de sesión
+
+El scraper **no** escribe usuario ni contraseña. Si la web pide login, las filas `didi_food` llevan el motivo en `promotions_visible`. Para usar **tu** sesión (solo si los términos de DiDi lo permiten en tu caso): `python -m competitive_intel save-didi-session` desde `caso_2_competitive_intelligence/` (ventana visible, inicias sesión, luego Enter en la consola), y en `.env` raíz del repo: `PLAYWRIGHT_STORAGE_STATE=didi_storage_state.json`. Ese JSON son cookies; no lo subas a git (está en `.gitignore`).
 
 ## Ética y legal
 
@@ -21,7 +25,8 @@ Los precios y fees se obtienen con **heurísticas sobre el texto** (`text_extrac
 
 ```bash
 pip install -r requirements.txt
-playwright install chromium
+playwright install firefox
+playwright install chromium   # si usas --browser chromium
 ```
 
 ## Comandos
@@ -29,6 +34,11 @@ playwright install chromium
 Desde `caso_2_competitive_intelligence/`:
 
 ```bash
+# Ver qué hace DiDi (navegador visible + logs en stderr: URL, título, extracto de texto)
+# PowerShell: $env:CI_SCRAPER_DEBUG="1"
+# CMD/bash:   set CI_SCRAPER_DEBUG=1   /   export CI_SCRAPER_DEBUG=1
+python -m competitive_intel scrape --limit-addresses 1 --platforms didi_food --headed
+
 # Prueba rápida: 1 dirección, solo Rappi
 python -m competitive_intel scrape --limit-addresses 1 --platforms rappi --headed
 
@@ -39,10 +49,11 @@ python -m competitive_intel scrape --delay 2.5
 python -m competitive_intel scrape --fallback-demo
 ```
 
-Salida por defecto: `data/caso_2_competitive_intelligence/output/scrape_latest.csv` (respetar `.gitignore` para corridas locales).
+Salida por defecto: `data/caso_2_competitive_intelligence/output/scrape_latest.csv` (respetar `.gitignore` para corridas locales). El pipeline recorre **cada plataforma en bloque** (p. ej. las 20 direcciones en Uber y después las 20 en Rappi) y **un solo CSV** con todas las filas; el orden en el archivo es por plataforma, luego por dirección.
 
 ## Límites conocidos
 
+- **"We're coming soon"** en `ubereats.com/...`: documentado en **`caso_2_competitive_intelligence/LIMITACION_UBER_WEB.md`**. Mitigaciones en código: varias URLs (`/mx/` y `/mx-en/`), cabecera `Accept-Language`, geolocalización CDMX concedida por defecto (DiDi la solicita), opcionales **`PLAYWRIGHT_PROXY`**, **`UBER_EATS_URL`**, **`CI_SCRAPER_NO_GEOLOCATION=1`** (ver `.env.example` en la raíz del monorepo).
 - **Anti-bot / CAPTCHA / login**: puede bloquear; probar `--headed` o otra red.
 - **Selectores**: Uber y Rappi cambian el front con frecuencia.
 - **Fees totales**: a menudo solo visibles en checkout; el CSV puede tener `null` en delivery/service fee aunque el ítem tenga precio.

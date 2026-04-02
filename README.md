@@ -1,28 +1,32 @@
-# Rappi — pruebas técnicas AI Engineer
+# Rappi — Pruebas técnicas AI Engineer
 
-Dos carpetas de primer nivel, **una por caso**, para que quede claro qué código y enunciado va con cada entrega. Los datos compartidos siguen bajo `data/` con nombres alineados al caso.
+Monorepo con **dos casos** independientes (`caso_1_operaciones`, `caso_2_competitive_intelligence`), datos bajo `data/` y documentación por carpeta.
 
 ## Estructura
 
-| Carpeta | Contenido |
-|---------|-----------|
-| **`caso_1_operaciones/`** | Enunciado + código del bot Streamlit, insights e informe |
-| **`caso_2_competitive_intelligence/`** | Enunciado + pipeline demo CI (CSV sintético + informe) |
-| `data/caso_1_operaciones/` | Tres CSV del caso Operaciones |
-| `data/caso_2_competitive_intelligence/output/` | CSV generado por `demo` (no commitear corridas; ver `.gitignore`) |
-| `docs/` | Notas generales del repo (opcional) |
+| Ruta | Contenido |
+|------|-----------|
+| [`caso_1_operaciones/`](caso_1_operaciones/) | Bot Streamlit, motor de insights, generación de informe ejecutivo |
+| [`caso_2_competitive_intelligence/`](caso_2_competitive_intelligence/) | Pipeline de *competitive intelligence* (demo + scrape Playwright + informe) |
+| [`data/caso_1_operaciones/`](data/caso_1_operaciones/) | CSV operativos del caso 1 |
+| [`data/caso_2_competitive_intelligence/output/`](data/caso_2_competitive_intelligence/output/) | CSV de scrape; **`scrape_latest.csv`** es el dataset fusionado entregado (ver README del caso 2) |
+| [`docs/`](docs/) | Notas opcionales |
+| [`.env.example`](.env.example) | Plantilla de variables (API key, Playwright, proxy, etc.) |
 
-Cada carpeta de caso tiene su propio **`README.md`** con comandos exactos.
+Cada caso tiene su **`README.md`** con alcance, comandos y notas de entrega.
 
-## Requisitos globales
+## Requisitos
 
-- Python 3.11+
-- `pip install -r requirements.txt` (desde la raíz del monorepo)
-- **Solo caso 1:** variable `OPENAI_API_KEY` en `.env` en la **raíz** del repo (plantilla: `.env.example`)
+- Python **3.11+**
+- Desde la raíz: `pip install -r requirements.txt`
+- **Caso 1:** `OPENAI_API_KEY` en `.env` (no subir `.env` a git)
+- **Caso 2 (scrape real):** `playwright install firefox` (recomendado; Chromium a veces muestra Uber “coming soon”)
 
 ---
 
 ## Caso 1 — Operaciones
+
+Resumen: asistente analítico sobre órdenes y métricas con Streamlit e informe Markdown/HTML.
 
 ```powershell
 cd caso_1_operaciones
@@ -30,18 +34,13 @@ streamlit run operaciones/app.py
 python -m operaciones.generate_report
 ```
 
-También puedes lanzar Streamlit desde la raíz:
-
-```powershell
-streamlit run caso_1_operaciones/operaciones/app.py
-```
-
-- Datos: `data/caso_1_operaciones/RAW_INPUT_METRICS.csv`, `RAW_ORDERS.csv`, `RAW_SUMMARY.csv`
-- Informe: `reports/insights_executive_*.{md,html}` (raíz del repo)
+Detalle: [`caso_1_operaciones/README.md`](caso_1_operaciones/README.md).
 
 ---
 
 ## Caso 2 — Competitive Intelligence
+
+Resumen: CSV esquematizado (20 direcciones MX × plataformas × productos), informe con figuras, y scraper opcional sobre web pública (Rappi, Uber Eats, intento DiDi).
 
 ```powershell
 cd caso_2_competitive_intelligence
@@ -49,25 +48,30 @@ python -m competitive_intel demo
 python -m competitive_intel report
 ```
 
-- Direcciones: `caso_2_competitive_intelligence/competitive_intel/addresses_mx.json`
-- CSV demo: `data/caso_2_competitive_intelligence/output/scrape_latest.csv`
-- Informe: `caso_2_competitive_intelligence/competitive_intel/reports/`
-
-`python -m competitive_intel scrape` usa **Playwright** (webs públicas). Requiere `playwright install chromium`. Detalle y límites: `caso_2_competitive_intelligence/competitive_intel/scrapers/README.md`. Opción sin red: `demo`.
-
----
-
-## Coste API (solo caso 1)
-
-Modelo `gpt-4o-mini`. Orden de magnitud **~USD 0.05–0.15** por ~10 preguntas; [precios OpenAI](https://platform.openai.com/pricing). El caso 2 **no** usa API en este repo.
-
----
-
-## Publicar en GitHub
+Scrape con Playwright (requiere red y navegador instalado):
 
 ```powershell
-git remote add origin https://github.com/USUARIO/REPO.git
-git push -u origin main
+python -m competitive_intel scrape --browser firefox --platforms uber_eats,rappi
 ```
 
-No subir `.env` ni `.venv`.
+Dataset e informe de entrega, limitaciones y mitigaciones: [`caso_2_competitive_intelligence/README.md`](caso_2_competitive_intelligence/README.md).
+
+---
+
+## Entrega y repositorio
+
+- No commitear: `.env`, `.venv/`, `didi_storage_state.json`, CSV intermedios en `output/` salvo lo indicado en `.gitignore`.
+- **`scrape_latest.csv`** del caso 2 **sí** está pensado para versionarse como muestra del último merge de corridas.
+
+```powershell
+git add -A
+git status
+git commit -m "Entrega: READMEs, caso 2 documentado, scrape_latest.csv"
+git push origin main
+```
+
+---
+
+## Coste API
+
+Solo **caso 1** usa OpenAI (`gpt-4o-mini`; orden de magnitud bajo por sesión). **Caso 2** no usa API en este repo.

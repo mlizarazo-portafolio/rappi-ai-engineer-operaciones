@@ -1,12 +1,20 @@
 # Informe — Competitive Intelligence (México)
 
-_Fuente CSV: `scrape_latest.csv`. Filas: 180._
+_Fuente CSV: `scrape_latest.csv`. Filas: 45._
+
+## Calidad y procedencia de datos
+
+**Origen (`data_source`):** `playwright_rappi` (15 filas); `playwright_uber_eats` (15 filas); `playwright_didi_food` (15 filas)
+
+- Hay filas de **scrape web (Playwright)**. Los números dependen de la UI del momento; validar fees/precios que parezcan atípicos.
+
+**Cobertura (% filas con precio de ítem):** `didi_food` 0%, `rappi` 80%, `uber_eats` 0%
 
 ## Comparativo rápido
 
-- **Ticket medio más bajo:** `rappi` (~129.0 MXN vs `uber_eats` ~308.3 MXN).
+- **Solo una plataforma con ticket calculable:** `rappi` (~159.0 MXN).
 - **Delivery fee más bajo en promedio:** `rappi`.
-- **Menor ETA medio:** `uber_eats` (~10 min).
+- **ETA:** sin datos numéricos suficientes.
 - **Ciudad con mayor dispersión entre plataformas (ticket):** `Ciudad de México`.
 - **Tasa filas con promoción visible (no 'Ninguna'):** `didi_food` 100%, `rappi` 100%, `uber_eats` 100%
 
@@ -20,17 +28,17 @@ _Fuente CSV: `scrape_latest.csv`. Filas: 180._
 
 ## Top 5 insights accionables
 
-1. **Finding:** En este dataset, `rappi` muestra ticket medio más bajo que `uber_eats`.  
-   **Impacto:** Percepción de precio y conversión en carrito pueden verse afectadas en zonas sensibles al precio.  
-   **Recomendación:** Revisar bundle/promos en ciudades donde la brecha vs `rappi` sea mayor al percentil 75.
+1. **Finding:** La comparación de ticket entre plataformas está **incompleta** (faltan precios o totales en una o más apps).  
+   **Impacto:** Riesgo de conclusiones sesgadas si solo una plataforma tiene cobertura.  
+   **Recomendación:** Priorizar scrape estable por plataforma o datos licenciados antes de presentar benchmarks.
 
 2. **Finding:** `rappi` concentra delivery fees medios más bajos.  
    **Impacto:** Competencia en costo de envío en zonas periféricas.  
    **Recomendación:** Simular subsidio parcial de envío en `zone_type=periphery` priorizado.
 
-3. **Finding:** `uber_eats` lidera ETA medio en datos sintéticos/demo.  
+3. **Finding:** No hay ETA numérico suficiente para comparar plataformas en este CSV.  
    **Impacto:** Expectativa de tiempo en UX y retención.  
-   **Recomendación:** Mapear zonas donde ETA Rappi supere competencia en scrape real y ajustar SLAs operativos.
+   **Recomendación:** Validar ETA con varias ventanas horarias y ubicación exacta (mismo punto en las tres apps).
 
 4. **Finding:** Mezcla de promos visibles difiere por plataforma en el CSV.  
    **Impacto:** Guerra promocional en adquisición.  
@@ -41,4 +49,4 @@ _Fuente CSV: `scrape_latest.csv`. Filas: 180._
    **Recomendación:** Deep-dive de fees + restaurante ancla (misma cadena cross-app) en esa ciudad.
 
 ---
-_Datos demo: reemplazar con scrape real para decisiones de producción._
+_Completar scrape o revisar filas sin `eta_minutes`._
